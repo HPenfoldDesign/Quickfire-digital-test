@@ -1,0 +1,102 @@
+/*Could use a preprocessor but at this time im not aware of the technologies you use*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/*---------------Global styles-----------------------*/
+
+:root {
+  --bs-font-sans-serif: 'Roboto', sans-serif !important;
+  --bs-border-width: none !important;
+}
+
+/*---------------navbar-----------------------*/
+
+.dropdown-menu {
+    border: none !important;
+    background-color: #f8f8f7 !important;
+}
+
+.nav-padding{
+    padding: 8px 16px;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+img.nav-logo {
+    height: 54px;
+}
+
+.nav-link {
+    padding: 8px 20px !important;
+    color: #000 !important;
+    
+}
+
+.nav-link:hover {
+   color:rgba(0, 0, 0, 0.55) !important ;
+}
+
+.dropdown-item {
+    font-weight: 300 !important;
+    font-size: 14px !important;
+}
+
+.nav-clr {
+    background-color: #f8f8f7;
+}
+
+.top-nav {
+    list-style: none;
+}
+
+.font-changes-navbar {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.login-shop {
+    display: flex;
+}
+
+.usershop {
+    margin: 0 20px;
+    color: #000;
+}
+
+.usershop:hover {
+    color:rgba(0, 0, 0, 0.55) !important;
+ }
+
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .usershop{
+      margin: 10px;
+    }
+  } 
+
+/*---------------page-----------------------*/
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}

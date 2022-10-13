@@ -1,21 +1,26 @@
 /*Could use a preprocessor but at this time im not aware of the technologies you use*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+
+
+
+
 /*---------------Global styles-----------------------*/
 
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 
-/*--------------------bootstrap adjustments and root------*/
+/*------------bootstrap adjustments and root------*/
 
 :root {
   --bs-border-width: none;
   --bg-lightgrey: #f8f8f7;
   --black: #000;
- 
 }
+
 
 /*---------------navbar-----------------------*/
 
@@ -76,7 +81,7 @@ img.nav-logo {
 }
 
 .usershop {
-    margin-left: 10px;;
+    margin-left: 10px;
     color: var(--black);
 }
 
@@ -95,24 +100,33 @@ img.nav-logo {
       }
   } 
 
+
+/*---------------container------------------------------*/
+
+.container-xxl {
+    margin-top: 61px;
+}
+
 /*---------------two-column layout-----------------------*/
 
 .two-column {
     display: flex; 
     flex-direction: row;
-    padding: 0 10 0 10px;
-    margin-top: 61px;
 }
 
 .left-side {
-    width: 50%;
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .right-side {
+    display: flex;
+    flex-direction: column;
     width: 50%;
 }
+
+
 
 @media only screen and (max-width: 992px) {
     .two-column{
@@ -160,9 +174,140 @@ img.nav-logo {
     content: ">";
 }
 
+@media only screen and (max-width: 576px) {
+    
+ .breadcrumb {
+   justify-content: center;
+   }
+  } 
+
 /*------------carousel---------------------------*/
 
 .carousel {
     max-width: 463px;
     margin-left: 32px;
+}
+
+ .carousel-control-next-icon {
+    background-image: url(resources/circle-arrow-right-solid.svg);
+    filter: invert(71%) sepia(0%) saturate(1464%) hue-rotate(10deg) brightness(112%) contrast(92%);
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url(resources/circle-arrow-left-solid.svg);
+    filter: invert(71%) sepia(0%) saturate(1464%) hue-rotate(10deg) brightness(112%) contrast(92%);
+  }
+
+  .carousel-control-next {
+      right: -70px;
+  }
+
+  .carousel-control-prev {
+    left: -70px;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .carousel {
+    margin: 0 auto;
+    }
+  } 
+
+  @media only screen and (max-width: 992px) {
+    .carousel-control-next {
+        right:0;
+    }
+  
+    .carousel-control-prev {
+      left:0;
+  }
+  } 
+
+  /*----------------image magnifier------------------*/
+
+  .img-magnifier-container {
+    position: relative;
+  }
+  
+  .img-magnifying-glass {
+    position: absolute;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 100px;
+    height: 100px;
+  }
+
+ 
+/*----------------------product title and add to wishlist-----------------*/
+
+.prod-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: 300;
+}
+
+.heart {
+    font-weight: bold;
+    color: darkred;
+}
+
+.wishlist {
+    color: #000;
+    font-size: 30px;
+}
+
+.wishlist:hover {
+    color: darkred;
+}
+
+/*---------------------------product ordering-----------------------------*/
+
+.prices {
+    display: flex;
+    padding-top: 50px;
+}
+
+.prices h3 {
+    font-weight: 900;
+    font-size: 32px;
+    padding-right: 15px;
+}
+
+.prices small{
+    font-weight: bold;
+    font-size: 20px;
+    color: grey;
+}
+
+/*---------------------------dropdown-----------------------------------*/
+.dropdown-options {
+  padding-top: 50px;
+}
+
+.sizeguide,
+.dropdown-options p {
+    margin: 0 0 5px 10px;
+    color: grey;
+}
+
+.form-select {
+    border-radius: 1.5em;
+    max-width: 50%;
+    height: 50px;
+}  
+
+/*------------------------add to basket--------------------------------*/
+
+.sizeguide-and-button {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addbtn {
+    width: 50%;
 }

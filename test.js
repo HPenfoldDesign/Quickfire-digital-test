@@ -1,16 +1,3 @@
-
-//script to test if page visibility api is present. If window is hidden, it affects bootstrap animations.
-
-/*
-document.addEventListener("visibilitychange",()=>{
-    if(document.visibilityState==="hidden"){
-        console.log(" >> This window is hidden")
-    }
-    else{
-        console.log(" >> This window is visible")
-    }
-})*/
-
 function magnify(imgID, zoom) {
     var img, glass, w, h, bw;
     img = document.getElementById(imgID);
@@ -65,13 +52,3 @@ function magnify(imgID, zoom) {
       return {x : x, y : y};
     }
   }
-
-  magnify("imgmag", 2)
-
-  
-  document.querySelector('.wishlist').addEventListener('click', () => {
-     document.querySelector('.fa-regular').classList.toggle("heart");  
-  })
- 
-
-

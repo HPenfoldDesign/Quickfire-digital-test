@@ -65,26 +65,28 @@
         <div>
       </ul>
       </nav>
-       <div class="container-xxl">
-       <section>
+
+       <div class="container mt-5">
+       <div class="row">
         <nav aria-label="Breadcrumb" class="breadcrumb">
         <ul>
             <li><a href="#" class="">Breadcrumb</a></li>
             <li><span aria-current="page">Breadcrumb</span></li>
         </ul>
-        </nav></section> 
-      <section class="two-column"  >
-        <div class="left-side">
+        </nav>
+      </div> 
+      <section class="row">
+        <div class="col-md-6">
             <div id="carousel" class="carousel slide" data-bs-interval="false">
               <div class="carousel-inner">
-                <div class="carousel-item img-magnifier-container active">
-                  <img src="resources/sofa 1.png" class="d-block w-100" id="imgmag" alt="1">
+                <div class="carousel-item active">
+                  <img src="resources/sofa 1.png" class="d-block w-100" alt="1">
                 </div>
-                <div class="carousel-item img-magnifier-container">
-                  <img src="resources/sofa 1.png" class="d-block w-100" id="imgmag" alt="2">
+                <div class="carousel-item">
+                  <img src="resources/sofa 1.png" class="d-block w-100" alt="2">
                 </div>
-                <div class="carousel-item img-magnifier-container">
-                  <img src="resources/sofa 1.png" class="d-block w-100" id="imgmag" alt="3">
+                <div class="carousel-item">
+                  <img src="resources/sofa 1.png" class="d-block w-100" alt="3">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -95,34 +97,55 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
-            </div>
+              <div class='row col-md-12 mt-2 g-0 gallery'>
+                <div class="col-sm-3 px-1">
+                  <img class="img-fluid thumb" data-original="sofa 1.png" src="resources/sofa 1.png" alt="The montreal leather sofa">
+                </div>
+                <div class="col-sm-3 px-1">
+                  <img class="img-fluid thumb" data-original="sofa 1.png" src="resources/sofa 1.png" alt="The montreal leather sofa has a variety of colours">
+                  </div>
+                <div class="col-sm-3 px-1">
+                  <img class="img-fluid thumb" data-original="sofa 1.png" src="resources/sofa 1.png" alt="The montreal leather sofa has a variety of sizes">
+                </div>
+                <div class="col-sm-3 px-1">
+                  <img class="img-fluid thumb" data-original="sofa 1.png" src="resources/sofa 1.png" alt="This sofa can be delivered straight to your door">
+                </div>
+              </div> 
+            </div>            
           </div>
-          <div class="right-side">
-            <div class="prod-name">
-              <h2 class="title">Montreal Leather sofa</h2>
-              <a class="wishlist"><i class="fa-regular fa-heart"></i></a>
+
+          <div class="col-md-6  d-flex flex-column justify-content-between">
+            <div class="row g-0 col-md-12">
+              <h2 class="title col-md-6">Montreal Leather sofa</h2>
+              <a class="wishlist col-md-6 text-end"><i class="fa-regular fa-heart"></i></a>
               </div>
-              <div class="prices">
-                <h3>£649.00</h3><small><s>£949.00</s></small>
+              <div class="row">
+                <h3 class="col-md-3 price">£649.00</h3><small class="col-md-9 prev-price" ><s>£949.00</s></small>
               </div>
-            <div class="dropdown-options">
+              <div class="row samples">
+                 <div class="col-md-4 g-0 img-fluid"><a><img class="sample" src="resources/sample 1.png"></a></div>
+                 <div class="col-md-4 g-0 img-fluid"><a><img class="sample" src="resources/sample 2.png"></a></div>
+                 <div class="col-md-4 g-0 img-fluid"><a></a><img class="sample" src="resources/sample 3.png"></a></div>
+              </div>
+            <div class="dropdown-options row">
               <p>Size</p>
-              <div class="dropdown">
+              <div class="dropdown g-0">
                 <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option selected>2 seater | 180cm (w) x 80cm (d)</span></option>
+                  <option value="1">3 seater | 229cm (w) x 88cm (d)</span></option>
+                  <option value="2">4 seater | 298cm (w) x 97cm (d)</option>
                 </select>
               </div>
              </div> 
-              <div class="sizeguide-and-button">
-                <a href="#" class="sizeguide">size guide</a>
+              <div class="sizeguide-and-btn row">
+                <a href="#" class="sizeguide g-0 mb-5">Size Guide</a>
                 <button type="button" class="btn btn-dark addbtn">Add to Basket</button>
               </div>
-
-          </div>
       </section>
+    </div>
+    <div class="black-background">
+      <img src="resources/sofa 1.png" alt="" class="full-image">
+      <p class="caption"></p>
     </div>
 
       

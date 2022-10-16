@@ -1,77 +1,61 @@
 
 //script to test if page visibility api is present. If window is hidden, it affects bootstrap animations.
 
-/*
-document.addEventListener("visibilitychange",()=>{
+
+/*document.addEventListener("visibilitychange", () => {
     if(document.visibilityState==="hidden"){
         console.log(" >> This window is hidden")
     }
     else{
         console.log(" >> This window is visible")
     }
-})*/
+});
 
-function magnify(imgID, zoom) {
-    var img, glass, w, h, bw;
-    img = document.getElementById(imgID);
-    /*create magnifier glass:*/
-    glass = document.createElement("DIV");
-    glass.setAttribute("class", "img-magnifying-glass");
-    /*insert magnifier glass:*/
-    img.parentElement.insertBefore(glass, img);
-    /*set background properties for the magnifier glass:*/
-    glass.style.backgroundImage = "url('" + img.src + "')";
-    glass.style.backgroundRepeat = "no-repeat";
-    glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
-    bw = 3;
-    w = glass.offsetWidth / 2;
-    h = glass.offsetHeight / 2;
-    /*execute a function when someone moves the magnifier glass over the image:*/
-    glass.addEventListener("mousemove", moveMagnifier);
-    img.addEventListener("mousemove", moveMagnifier);
-    /*and also for touch screens:*/
-    glass.addEventListener("touchmove", moveMagnifier);
-    img.addEventListener("touchmove", moveMagnifier);
-    function moveMagnifier(e) {
-      var pos, x, y;
-      /*prevent any other actions that may occur when moving over the image*/
-      e.preventDefault();
-      /*get the cursor's x and y positions:*/
-      pos = getCursorPos(e);
-      x = pos.x;
-      y = pos.y;
-      /*prevent the magnifier glass from being positioned outside the image:*/
-      if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
-      if (x < w / zoom) {x = w / zoom;}
-      if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
-      if (y < h / zoom) {y = h / zoom;}
-      /*set the position of the magnifier glass:*/
-      glass.style.left = (x - w) + "px";
-      glass.style.top = (y - h) + "px";
-      /*display what the magnifier glass "sees":*/
-      glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+*/
+
+  // modal----------------------------
+
+  const modal = document.querySelector('.black-background');
+  const previews = document.querySelectorAll('.gallery img');
+  const original = document.querySelector('.full-image');
+  const caption = document.querySelector('.caption');
+
+  previews.forEach((preview) => {
+    preview.addEventListener('click', () => {
+      modal.classList.add('open');
+      original.classList.add('open');
+      const originalSrc = preview.getAttribute('data-original');
+      original.src = `resources/${originalSrc}`;
+      const altText = preview.alt;
+      caption.textContent = altText;
+
+    });
+  });
+
+  modal.addEventListener('click', (e) => {
+    if(e.target.classList.contains('black-background')) {
+      modal.classList.remove('open');
+      original.classList.romove('open');
     }
-    function getCursorPos(e) {
-      var a, x = 0, y = 0;
-      e = e || window.event;
-      /*get the x and y positions of the image:*/
-      a = img.getBoundingClientRect();
-      /*calculate the cursor's x and y coordinates, relative to the image:*/
-      x = e.pageX - a.left;
-      y = e.pageY - a.top;
-      /*consider any page scrolling:*/
-      x = x - window.pageXOffset;
-      y = y - window.pageYOffset;
-      return {x : x, y : y};
-    }
-  }
+  })
 
-  magnify("imgmag", 2)
 
-  
+
+  //add to wishlist----------------------------
+
   document.querySelector('.wishlist').addEventListener('click', () => {
      document.querySelector('.fa-regular').classList.toggle("heart");  
   })
  
 
+  //select sample---------------------------- 
 
+  const sample = document.querySelectorAll(".sample");
+
+  sample.forEach((sample) => {
+    sample.addEventListener("click", () => {
+      sample.classList.toggle("sample-shadow");
+    });
+  });
+
+  //-------------------------------------------

@@ -100,45 +100,6 @@ img.nav-logo {
       }
   } 
 
-
-/*---------------container------------------------------*/
-
-.container-xxl {
-    margin-top: 61px;
-}
-
-/*---------------two-column layout-----------------------*/
-
-.two-column {
-    display: flex; 
-    flex-direction: row;
-}
-
-.left-side {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.right-side {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-
-
-@media only screen and (max-width: 992px) {
-    .two-column{
-        flex-direction: column;
-    }
-
-    .left-side,
-    .right-side {
-        width: 100%;
-    }
-  } 
-
 /*----------------------Breadcrumb---------------------------------*/
 
 .breadcrumb {
@@ -184,8 +145,7 @@ img.nav-logo {
 /*------------carousel---------------------------*/
 
 .carousel {
-    max-width: 463px;
-    margin-left: 32px;
+    margin: 0 70px;
 }
 
  .carousel-control-next-icon {
@@ -206,23 +166,6 @@ img.nav-logo {
     left: -70px;
 }
 
-
-@media only screen and (max-width: 576px) {
-    .carousel {
-    margin: 0 auto;
-    }
-  } 
-
-  @media only screen and (max-width: 992px) {
-    .carousel-control-next {
-        right:0;
-    }
-  
-    .carousel-control-prev {
-      left:0;
-  }
-  } 
-
   /*----------------image magnifier------------------*/
 
   .img-magnifier-container {
@@ -240,12 +183,6 @@ img.nav-logo {
 
  
 /*----------------------product title and add to wishlist-----------------*/
-
-.prod-name {
-    display: flex;
-    justify-content: space-between;
-}
-
 .title {
     font-weight: 300;
 }
@@ -264,50 +201,122 @@ img.nav-logo {
     color: darkred;
 }
 
-/*---------------------------product ordering-----------------------------*/
+/*---------------------------prices-----------------------------*/
 
-.prices {
-    display: flex;
-    padding-top: 50px;
-}
-
-.prices h3 {
-    font-weight: 900;
+.price {
+    font-weight: bold;
     font-size: 32px;
     padding-right: 15px;
 }
 
-.prices small{
+.prev-price {
     font-weight: bold;
     font-size: 20px;
     color: grey;
 }
-
-/*---------------------------dropdown-----------------------------------*/
-.dropdown-options {
-  padding-top: 50px;
+/*---------------------------samples------------------------------------*/
+.samples {
+    max-width: 55%;
 }
 
-.sizeguide,
+.sample {
+    max-width: 100px;
+}
+
+.sample-shadow {
+    box-shadow: 1px 1px 5px 7px rgba(166,166,166,0.9);
+}
+/*---------------------------dropdown-----------------------------------*/
+.dropdown-options {
+    max-width: 55%;
+}
+
 .dropdown-options p {
-    margin: 0 0 5px 10px;
+    margin-bottom: 0;
+}
+
+.dropdown-options p {
     color: grey;
 }
 
 .form-select {
     border-radius: 1.5em;
-    max-width: 50%;
     height: 50px;
-}  
+} 
 
 /*------------------------add to basket--------------------------------*/
 
-.sizeguide-and-button {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
+.sizeguide-and-btn {
+    max-width: 55%;
+}
+
+
+.sizeguide:hover {
+    color:rgba(0, 0, 0, 0.55);
+}
+
+.sizeguide {
+    font-weight: 300;
+    margin: 0 0 5px 10px;
+    color: var(--black);
 }
 
 .addbtn {
-    width: 50%;
+    height: 50px;
+}
+/*---------------thumbnails----------------------*/
+
+.thumb {
+   border-radius: 5px;
+   padding: 0;
+   transition: all 0.3s ease-out;
+   cursor: pointer;
+   overflow:hidden;
+}
+
+.thumb:hover {
+    transform: scale(1.1);
+}
+
+/*--------------modal---------------------------*/
+
+.black-background {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.black-background.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.black-background p {
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    transition: 0.25s ease-out;
+}
+
+.full-image {
+    position: absolute;
+    height: 70%;
+    left: 27%;
+    bottom: 20%;
+    transform: scale(0.5);
+    transition: all 0.25s ease-out;
+}
+
+.full-image.open {
+    transform: scale(1);
 }

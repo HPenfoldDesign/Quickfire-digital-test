@@ -13,6 +13,12 @@
 
 */
 
+  //remove icons from dropdown nav-------------------
+
+  //  if (window.innerWidth < 992) {
+    //document.querySelector('.login-shop')
+  //}
+
   // modal----------------------------
 
   const modal = document.querySelector('.black-background');
@@ -35,7 +41,7 @@
   modal.addEventListener('click', (e) => {
     if(e.target.classList.contains('black-background')) {
       modal.classList.remove('open');
-      original.classList.romove('open');
+      original.classList.remove('open');
     }
   })
 

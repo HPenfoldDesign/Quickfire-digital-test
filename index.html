@@ -21,38 +21,38 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end font-changes-navbar" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown top-nav-spacing">
+                <a class="nav-link top-nav-link dropdown-toggle ml-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Menu Item
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-box">
                   <li><a class="dropdown-item" href="#">Menu Item</a></li>
                   <li><a class="dropdown-item" href="#">Menu Item</a></li>
                   <li><a class="dropdown-item" href="#">Menu Item</a></li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown dropdown-menu-box">
+                <a class="nav-link top-nav-link dropdown-toggle top-nav-spacing" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Menu Item
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-box">
                   <li><a class="dropdown-item" href="#">Menu Item</a></li>
                   <li><a class="dropdown-item" href="#">Menu Item</a></li>
                   <li><a class="dropdown-item" href="#">Menu Item</a></li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown dropdown-menu-box">
+                <a class="nav-link top-nav-link dropdown-toggle top-nav-spacing" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Menu Item
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu  dropdown-menu-box">
                   <li><a class="dropdown-item" href="#">Menu Item</a></li>
                   <li><a class="dropdown-item" href="#">Menu Item</a></li>
                   <li><a class="dropdown-item" href="#">Menu Item</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Menu Item</a>
+                <a class="nav-link top-nav-link" aria-current="page" href="#">Menu Item</a>
               </li>
             </ul>
           </div>
@@ -139,14 +139,59 @@
                 <a href="#" class="sizeguide g-0 mb-5">Size Guide</a>
                 <button type="button" class="btn btn-dark addbtn">Add to Basket</button>
               </div>
+              </div>
       </section>
-
+     </div>
     <div class="black-background">
-      <img src="resources/sofa 1.png" alt="" class="full-image img-fluid">
+      <img src="" alt="" class="full-image img-fluid">
       <p class="caption"></p>
     </div>
 
-      
+    <ul class="nav justify-content-center mt-5 inner-nav-styling d-flex g-0" id="myTab" role="tablist">
+      <li class="nav-item border-hover  py-3 mx-5">
+        <a class="nav-link px-0 link-clr" data-bs-toggle="tab" data-bs-target="#productDescription" type="button" role="tab" aria-controls="productDescription" aria-selected="false">Product Description</a>
+      </li>
+      <li class="nav-item border-hover border-clicked py-3 mx-5">
+        <a class="nav-link active px-0 link-clr" data-bs-toggle="tab" data-bs-target="#sizeGuide" type="button" role="tab" aria-controls="sizeGuide" aria-selected="true">Size Guide</a>
+      </li>
+      <li class="nav-item border-hover py-3 mx-5">
+        <a class="nav-link px-0 link-clr"  data-bs-toggle="tab" data-bs-target="#delivery" type="button" role="tab" aria-controls="delivery" aria-selected="false">Delivery & Returns</a>
+      </li>
+      <li class="nav-item border-hover py-3 mx-5">
+        <a class="nav-link px-0 link-clr" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+      </li>
+    </ul>
+    
+    <div class="tab-content">
+      <div class="tab-pane" id="productDescription" role="tabpanel" aria-labelledby="productDescription"><p>Empty Page 1</p></div>
+      <div class="tab-pane sizeguide-page active" id="sizeGuide" role="tabpanel" aria-labelledby="sizeGuide">
+         
+        <div class="container">
+        <div class="row">
+      <div class="col-sm-12 col-md-6">
+        
+      <div class="d-flex flex-column specs mt-5">   
+        <div><i class="symbols px-3"><img src="resources/A symbol.svg" alt="A"></i><p class="d-inline reg-text">Width:<span> 189 cm</span></p></div>
+        <div><i class="symbols px-3"><img src="resources/B symbol.svg" alt="B"></i><p class="d-inline reg-text" >Depth:<span> 98 cm</span></p></div>
+        <div><i class="symbols px-3"><img src="resources/C symbol.svg" alt="C"></i><p class="d-inline reg-text">Height under furniture:<span> 7 cm</span></p></div>
+        <div><i class="symbols px-3"><img src="resources/D symbol.svg" alt="D"></i><p class="d-inline reg-text">Seat width:<span> 141 cm</span></p></div>
+        <div><i class="symbols px-3"><img src="resources/E symbol.svg" alt="E"></i><p class="d-inline reg-text">Backrest height:<span> 76 cm</span></p></div>
+      </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div>
+              <img src="resources/sofa-size.JPG" class="img-fluid">
+            </div>
+        </div>
+      </div>
+      </div>
+     </div>
+      <div class="tab-pane" id="delivery" role="tabpanel" aria-labelledby="delivery"><p>Empty Page 3</p></div>
+      <div class="tab-pane" id="reviews" role="tabpanel" aria-labelledby="reviews"><p>Empty page 4</p></div>
+
+
+    
+
       
       <script src="script.js"></script>  
       <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

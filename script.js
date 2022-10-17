@@ -13,11 +13,6 @@
 
 */
 
-  //remove icons from dropdown nav-------------------
-
-  //  if (window.innerWidth < 992) {
-    //document.querySelector('.login-shop')
-  //}
 
   // modal----------------------------
 
@@ -44,8 +39,6 @@
       original.classList.remove('open');
     }
   })
-
-
 
   //add to wishlist----------------------------
 

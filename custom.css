@@ -12,7 +12,7 @@
 
 /*------------bootstrap adjustments and root------*/
 
-:root {
+:root { 
   --bs-border-width: none;
   --bg-lightgrey: #f8f8f7;
   --black: #000;
@@ -21,11 +21,12 @@
 
 /*---------------navbar-----------------------*/
 
-.nav-item {
-  margin-left: 30px;
+.top-nav-spacing {
+    margin-right: 30px;
 }
 
-.dropdown-menu {
+
+.dropdown-menu-box {
     border: none;
     background-color: var(--bg-lightgrey);
 }
@@ -47,7 +48,7 @@ img.nav-logo {
     color: var(--black);
 }
 
-.nav-link:hover {
+.top-nav-link:hover {
    color:rgba(0, 0, 0, 0.55);
 }
 
@@ -287,7 +288,52 @@ img.nav-logo {
     transform: translate(-50%, -50%) scale(1);
 }
 
-/*---------------------media queries-------------------------*/
+/*---------------------multitab section----------------------*/
+
+.inner-nav-styling {
+    background: var(--bg-lightgrey);
+}
+
+.border-hover {
+    border-bottom: 3px solid transparent;
+}
+
+.border-clicked {
+    border-bottom: 3px solid var(--black);
+    font-weight: bold;
+}
+
+.link-clr:hover {
+    color: var(--black);
+}
+
+/*--------------------size guide-----------------------------*/
+
+.sizeguide-page {
+   background-color: var(--bg-lightgrey);
+}
+
+.symbols {
+    width: 15px;
+    height: auto;
+}
+
+.specs {
+    margin-left: 30%
+}
+
+
+.reg-text {
+    font-weight: 300;
+}
+
+.reg-text span {
+    font-weight: 900;
+}
+
+/*---------------------media queries (supposed to be min-width, didnt realise until I was too far in)-------------------------*/
+
+
 
 
 @media only screen and (max-width: 576px) {
@@ -315,7 +361,7 @@ img.nav-logo {
      } 
 
    
-@media only screen and (max-width: 758px) {
+@media only screen and (max-width: 768px) {
 
       .samples {
         max-width: 100%;
@@ -327,9 +373,11 @@ img.nav-logo {
      .sizeguide-and-btn {
         max-width: 100%;
      }
+     .specs {
+        align-items: center;
+       }
      }   
 
-    
      @media only screen and (max-width: 992px) {
         
         .nav-item {
@@ -349,7 +397,9 @@ img.nav-logo {
             }
         .login-shop {
             padding-left: 10px;
-        }    
         }
-   
-  
+        .specs {
+            margin-left: 0;
+        }
+        }
+        

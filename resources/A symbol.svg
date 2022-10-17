@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
+  <defs>
+    <filter id="Base" x="0" y="0" width="41" height="41" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#363d4d" flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_33" data-name="Group 33" transform="translate(-919.5 -953.967)">
+    <g transform="matrix(1, 0, 0, 1, 919.5, 953.97)" filter="url(#Base)">
+      <g id="Base-2" data-name="Base" transform="translate(7.5 5.5)" fill="#fff" stroke="#c9c9c9" stroke-width="0.5">
+        <rect width="26" height="26" rx="13" stroke="none"/>
+        <rect x="0.25" y="0.25" width="25.5" height="25.5" rx="12.75" fill="none"/>
+      </g>
+    </g>
+    <text id="A" transform="translate(937 975.467)" fill="#c9c9c9" font-size="10" font-family="Gilroy-Bold, Gilroy" font-weight="700"><tspan x="0" y="0">A</tspan></text>
+  </g>
+</svg>

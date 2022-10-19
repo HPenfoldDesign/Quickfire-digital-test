@@ -331,82 +331,13 @@ img.nav-logo {
     font-weight: 900;
 }
 
-/*---------------------media queries (supposed to be min-width, didnt realise until I was too far in)-------------------------*/
-
-
-
-
-@media only screen and (max-width: 576px) {
-    
-    .breadcrumb {
-      justify-content: center;
-      } 
-
-    .carousel-control-next {
-        right: 0;
-    }
-  
-    .carousel-control-prev {
-      left: 0;
-    }
-
-    .carousel {
-        margin: 0;
-    }
-
-    .breakpoint {
-        margin: 50px 20px !important;
-    }
-      
-     } 
-
-   
-@media only screen and (max-width: 768px) {
-
-      .samples {
-        max-width: 100%;
-      } 
-
-      .dropdown-options {
-        max-width: 100%
-      }
-     .sizeguide-and-btn {
-        max-width: 100%;
-     }
-     .specs {
-        align-items: center;
-       }
-     }   
-
-     @media only screen and (max-width: 992px) {
-        
-        .nav-item {
-            margin-left: 0;
-          }    
-
-        .breakpoint {
-            margin: 50px 70px;
-        }  
-
-        .samples {
-            margin-top: 20px;
-        }
-
-        .dropdown-options {
-            margin: 20px 0;
-            }
-        .login-shop {
-            padding-left: 10px;
-        }
-        .specs {
-            margin-left: 0;
-        }
-        }
-        
-
+.bkgrnd {
+    height: 369px;
+    background-color: var(--bg-lightgrey);
+}
  /*------------------multi-img carousel--------------------------*/
 
-  .product {
+ .product {
     position: relative;
     overflow: hidden;
     padding: 20px;
@@ -513,3 +444,111 @@ img.nav-logo {
     font-weight: 900;
     font-size: 1.5em;
   }
+
+/*------------------------signup-----------------------------------------------*/
+
+.signup {
+    background: var(--black);
+}
+
+.submit-btn {
+    background: white;
+    color: black;
+    border: none;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.submit-btn:hover {
+    background: darkgray;
+    color: white;
+}
+
+.container h3 {
+   color: white;
+   align-self: center;
+}
+
+.form {
+    justify-content: space-between;
+}
+
+.form-control {
+    height: 50px;
+    width: 35vw;
+}
+ 
+
+ /*---------------------media queries (supposed to be min-width, didnt realise until I was too far in)-------------------------*/
+
+
+
+
+@media only screen and (max-width: 576px) {
+    
+    .breadcrumb {
+      justify-content: center;
+      } 
+
+    .carousel-control-next {
+        right: 0;
+    }
+  
+    .carousel-control-prev {
+      left: 0;
+    }
+
+    .carousel {
+        margin: 0;
+    }
+
+    .breakpoint {
+        margin: 50px 20px !important;
+    }
+      
+     } 
+
+   
+@media only screen and (max-width: 768px) {
+
+      .samples {
+        max-width: 100%;
+      } 
+
+      .dropdown-options {
+        max-width: 100%
+      }
+     .sizeguide-and-btn {
+        max-width: 100%;
+     }
+     .specs {
+        align-items: center;
+       }
+     }   
+
+     @media only screen and (max-width: 992px) {
+        
+        .nav-item {
+            margin-left: 0;
+          }    
+
+        .breakpoint {
+            margin: 50px 70px;
+        }  
+
+        .samples {
+            margin-top: 20px;
+        }
+
+        .dropdown-options {
+            margin: 20px 0;
+            }
+        .login-shop {
+            padding-left: 10px;
+        }
+        .specs {
+            margin-left: 0;
+        }
+        }
+        
+

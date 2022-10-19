@@ -456,12 +456,15 @@ img.nav-logo {
 }
 
 .submit-btn {
-    border: 2px solid white;
     background: black;
     color: white;
     border: none;
     height: 50px;
     margin-left: 10px;
+}
+
+.btn {
+    border: 1px solid white;
 }
 
 .submit-btn:hover {
@@ -472,10 +475,12 @@ img.nav-logo {
 .container h3 {
    color: white;
    align-self: center;
+   padding-right: 5px;
 }
 
 .form {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .form-control {
@@ -493,7 +498,9 @@ img.nav-logo {
 .footer-col {
     list-style: none;
     font-weight: 300;
+    width: 250px
 }
+
 
 .footer-col li a {
     text-decoration: none;
@@ -511,6 +518,8 @@ img.nav-logo {
 
 .footer-el {
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
 }
 
 .footer-contact {
@@ -525,16 +534,25 @@ img.nav-logo {
 
 .copyright {
     font-weight: 500;
+    margin-left: 15vw;
 }
 
 .bottom-container {
     background: var(--bg-lightgrey) ;
-    justify-content: space-between;
+}
+
+.social-links i {
+    font-size: 30px;
+    padding-right: 15px;
 }
 
 .social-links {
-    font-size: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--black);
 }
+
 
  /*---------------------media queries (supposed to be min-width, didnt realise until I was too far in)-------------------------*/
 
@@ -562,6 +580,14 @@ img.nav-logo {
     .breakpoint {
         margin: 50px 20px !important;
     }
+    
+    .form {
+        justify-content: center;
+    }
+     
+    .form-control {
+        width: 80vw;
+    }
       
      } 
 
@@ -580,8 +606,9 @@ img.nav-logo {
      }
      .specs {
         align-items: center;
-       }
-     }   
+       }  
+     } 
+       
 
      @media only screen and (max-width: 992px) {
         
@@ -600,12 +627,20 @@ img.nav-logo {
         .dropdown-options {
             margin: 20px 0;
             }
+
         .login-shop {
             padding-left: 10px;
         }
+        
         .specs {
             margin-left: 0;
         }
+       
+        
         }
         
-
+        @media only screen and (max-width: 1400px) {
+            .first-item{
+                display: none !important;
+            }
+        }

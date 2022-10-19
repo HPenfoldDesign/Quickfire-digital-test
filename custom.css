@@ -368,7 +368,7 @@ img.nav-logo {
   
   .product-card {
     flex: 0 0 auto;
-    height: 350px;
+    height: 500px;
     margin-right: 40px;
   }
   
@@ -377,7 +377,7 @@ img.nav-logo {
     width: 100%;
     height: auto;
     overflow: hidden;
-    border-radius: 10x;
+    border-radius: 10px;
   }
   
   .product-thumb {
@@ -631,7 +631,7 @@ img.nav-logo {
         .login-shop {
             padding-left: 10px;
         }
-        
+
         .specs {
             margin-left: 0;
         }

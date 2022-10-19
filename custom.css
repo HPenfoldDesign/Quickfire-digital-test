@@ -298,10 +298,14 @@ img.nav-logo {
     border-bottom: 3px solid transparent;
 }
 
-.border-clicked {
+.border-hover:visited,
+.border-hover:focus,
+.border-hover:active,
+.border-hover:hover {
     border-bottom: 3px solid var(--black);
     font-weight: bold;
 }
+
 
 .link-clr:hover {
     color: var(--black);
@@ -452,8 +456,9 @@ img.nav-logo {
 }
 
 .submit-btn {
-    background: white;
-    color: black;
+    border: 2px solid white;
+    background: black;
+    color: white;
     border: none;
     height: 50px;
     margin-left: 10px;
@@ -477,7 +482,59 @@ img.nav-logo {
     height: 50px;
     width: 35vw;
 }
- 
+
+/*------------------------------------footer--------------------------------*/
+
+.footer {
+    background: var(--bg-lightgrey);
+   
+}
+
+.footer-col {
+    list-style: none;
+    font-weight: 300;
+}
+
+.footer-col li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.footer-col li a:hover {
+    color: darkgrey;
+}
+
+.footer-title {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.footer-el {
+    justify-content: space-between;
+}
+
+.footer-contact {
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.footer-contact:last-child:hover {
+    color: darkgrey;
+}
+
+.copyright {
+    font-weight: 500;
+}
+
+.bottom-container {
+    background: var(--bg-lightgrey) ;
+    justify-content: space-between;
+}
+
+.social-links {
+    font-size: 30px;
+}
 
  /*---------------------media queries (supposed to be min-width, didnt realise until I was too far in)-------------------------*/
 

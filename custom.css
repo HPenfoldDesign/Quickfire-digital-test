@@ -177,6 +177,7 @@ img.nav-logo {
 .price {
     font-weight: bold;
     font-size: 32px;
+    color: #000;
 }
 
 .prev-price {
@@ -472,7 +473,7 @@ img.nav-logo {
     color: white;
 }
 
-.container h3 {
+.offer-text {
    color: white;
    align-self: center;
    padding-right: 5px;
